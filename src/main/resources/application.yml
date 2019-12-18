@@ -1,9 +1,16 @@
+## Mail's properties
+solibillemail:
+  to: devsolibill@gmail.com #, juoud1@gmail.com
+  from : infosolibill@gmail.com
+  subject: Allo from Solibill
+  text: Solibill goes well. 
+  
 ## JavaMailSender's properties
 spring:
   mail:
     host: localhost
-    port: 8025
-
+    port: 8125
+    
 ## Logging's properties
 logging:
   file: /olibilllogs/email.log
