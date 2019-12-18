@@ -1,0 +1,17 @@
+## JavaMailSender's properties
+spring:
+  mail:
+    host: localhost
+    port: 8025
+
+## Logging's properties
+logging:
+  file: /olibilllogs/email.log
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: DEBUG
+    io:
+      netty: DEBUG
+    reactor: DEBUG
