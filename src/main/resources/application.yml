@@ -1,3 +1,7 @@
+## App'name for this git feature
+app:
+  custom-name: modern java working
+
 ## Mail's properties
 solibillemail:
   to: devsolibill@gmail.com #, juoud1@gmail.com
@@ -13,7 +17,7 @@ spring:
     
 ## Logging's properties
 logging:
-  file: /olibilllogs/email.log
+  file: /olibilllogs/modernjavarecipes.log
   level:
     root: INFO
     org:
