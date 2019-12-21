@@ -5,13 +5,8 @@ import java.io.IOException;
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.MimeMessageHelper;
-
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -33,8 +28,8 @@ public class Dockerization1ServiceEmailApplication {
 	public static void main(String[] args) throws IOException {
 		SpringApplication.run(Dockerization1ServiceEmailApplication.class, args);
 		
-		log.info("Press [ENTER] to quit:".toUpperCase());
-		System.in.read();
+//		log.info("Press [ENTER] to quit:".toUpperCase());
+//		System.in.read();
 	}
 	
 	@PostConstruct
