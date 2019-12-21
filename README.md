@@ -1,2 +1,2 @@
 # Sending-email
-Dummy java sending e-mail with spring-boot
+Dummy working with java file IO and sending e-mail with spring-boot.
