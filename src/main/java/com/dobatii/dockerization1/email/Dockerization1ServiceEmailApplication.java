@@ -37,17 +37,4 @@ public class Dockerization1ServiceEmailApplication {
 		log.info("E-mail émetteur {}, \nDestinateur {}, \nSubject {}, \nMessage {}", emailEmetteur, emailDestinataire.toString(), emailSubject, emailTextMessage);
 	}
 	
-//	@Bean
-//	public ApplicationRunner startMailSender(JavaMailSender emailSender) {
-//		log.info("Sending courriel ...".toUpperCase());
-//		
-//		return args -> 
-//			emailSender.send(msg -> {
-//				MimeMessageHelper mimeMsgeHelper = new MimeMessageHelper(msg);
-//				mimeMsgeHelper.setTo(emailDestinataire);
-//				mimeMsgeHelper.setFrom(emailEmetteur);
-//				mimeMsgeHelper.setSubject(emailSubject);
-//				mimeMsgeHelper.setText(emailTextMessage);
-//			});
-//	}
 }

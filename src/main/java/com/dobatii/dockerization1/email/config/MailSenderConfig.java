@@ -8,21 +8,23 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.thymeleaf.spring5.SpringTemplateEngine;
 
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * Configuring mail sender
+ * Configuring mail sender that displays e-mail in thymeleaf
  * 
  * @author 9386-2142 Qc inc
- * @version 1.0
- * 2019-12-18
+ * @version 2.0
+ * 2019-12-21
  * 
  */
 
-//@Slf4j
-//@Configuration
+@Slf4j
+@Configuration
 public class MailSenderConfig {
+	
 //	@Value("@{solibillemail.from}")
 //	private String emailEmetteur;
 //	
@@ -37,13 +39,13 @@ public class MailSenderConfig {
 //	
 //	@PostConstruct
 //	public void printEmailProperties() {
-//		log.info("E-mail émetteur {}, \nDestinateur {}, \nSubject {}, \\nMessage {}", emailEmetteur, emailDestinataire.toString(), emailSubject, emailTextMessage);
+//		log.info("E-mail émetteur {}, \nDestinateur {}, \nSubject {}, \nMessage {}", emailEmetteur, emailDestinataire.toString(), emailSubject, emailTextMessage);
 //	}
 //	
 //	@Bean
-//	public ApplicationRunner startMailSender(JavaMailSender emailSender) {
+//	public ApplicationRunner startMailSender(JavaMailSender emailSender, SpringTemplateEngine templateEngine) {
 //		
-//		return (args) -> {
+//		return (params) -> {
 //			emailSender.send(msg -> {
 //				MimeMessageHelper mimeMsgeHelper = new MimeMessageHelper(msg);
 //				mimeMsgeHelper.setTo(emailDestinataire);

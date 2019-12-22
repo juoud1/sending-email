@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no"/> -->
+<title>Dummmy Java IO output</title>
+</head>
+<body>
+	<p>
+		<em th:text="${emailbody}">Hééééé</em>
+	</p>
+	<script th:inline="javascript">
+		/*<![CDATA[*/
+		(function() {
+			console.log("Allo, Java IO front-end!!!");
+		})();
+		/*]]>*/
+	</script>	
+</body>
+</html>
